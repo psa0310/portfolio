@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="stylesheet" href="assets/css/slick.css" />
+     <link rel="stylesheet" href="assets/css/slick-theme.css" />
+     <link rel="stylesheet" href="assets/css/style_m.css" />
+     <link rel="stylesheet" href="assets/css/style_s.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script>
+          // 메인 GNB 네비게이션
+          $(function () {
+               $("#gnb > ul > li").hover(
+                    function () {
+                         $("#gnb").addClass("active");
+                         $(".gnb_bg").addClass("active");
+                    },
+                    function () {
+                         $("#gnb").removeClass("active");
+                         $(".gnb_bg").removeClass("active");
+                    }
+               );
+               $("#gnb > ul > li:first-child > a").focusin(function () {
+                    $("#gnb").addClass("active");
+                    $(".gnb_bg").addClass("active");
+               });
+          });
+     </script>
+</head>
+
+<body>
+
+<header style="clear:both;">
+<div class="header">
+    <div class="left">
+        <h1><a href="index.html"><img src="img/logo.svg" alt="로고"></a></h1>
+    </div>
+    <div class="middle">
+        <nav id="gnb">
+             <ul>
+                  <li style="background-image:url(../../img/menu_background.jpg);">
+                       <a href="menu1.html">관람안내</a>
+                       <ul>
+                            <li><a href="menu1.html">서울</a></li>
+                            <li><a href="menu1.html">과천</a></li>
+                            <li><a href="menu1.html">덕수궁</a></li>
+                            <li><a href="menu1.html">청주</a></li>
+                            <li><a href="menu1.html">캘린더</a></li>
+                            <li><a>&nbsp;</a></li>
+                       </ul>
+                  </li>
+                  <li><a href="#">전시</a>
+                       <ul>
+                            <li><a href="#">전시</a></li>
+                            <li><a href="#">필름앤비디오</a></li>
+                            <li><a href="#">다원예술</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a>&nbsp;</a></li>
+                            <li><a>&nbsp;</a></li>
+                       </ul>
+                  </li>
+                  <li><a href="#">교육</a>
+                       <ul>
+                            <li><a href="#">미술관교육소개</a></li>
+                            <li><a href="#">어린이미술관</a></li>
+                            <li><a href="#">참여신청</a></li>
+                            <li><a href="#">교육자료실</a></li>
+                            <li><a href="#">교육사진</a></li>
+                            <li><a>&nbsp;</a></li>
+                       </ul>
+                  </li>
+                  <li><a href="#">소장품</a>
+                       <ul>
+                            <li><a href="#">고화질 보기</a></li>
+                            <li><a href="#">소장품 검색</a></li>
+                            <li><a>&nbsp;</a></li>
+                            <li><a>&nbsp;</a></li>
+                            <li><a>&nbsp;</a></li>
+                            <li><a>&nbsp;</a></li>
+                       </ul>
+                  </li>
+                  <li><a href="#">연구와 출판</a>
+                       <ul id="gnb_last">
+                            <li><a href="#">연구와 출판</a></li>
+                            <li><a href="#">아카이브와 도서</a></li>
+                            <li><a href="#">MMCA 연구</a></li>
+                            <li><a href="#">레지던시</a></li>
+                            <li><a href="#">보존과학</a></li>
+                            <li><a href="#">출판</a></li>
+                       </ul>
+                  </li>
+             </ul>
+        </nav>
+        <div class="gnb_bg" style="border-top: 1px solid #ccc;"></div>
+    </div>
+    <div class="functional-buttons">
+    <ul>
+      <li><a href="#">Log in</a></li>
+      <li><a href="#">Sign Up</a></li>
+    </ul>
+    </div>
+</div>
+</header>
+
+<section id="banner">
+    <div class="banner-img1">
+        <div class="container">
+            <div class="banner">
+                
+            </div>
+        </div>
+    </div>
+    <div class="banner-img2">
+        <div class="container">
+            <div class="banner">
+            </div>
+        </div>
+    </div>
+    <div class="banner-img3">
+        <div class="container">
+            <div class="banner">
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!--<div class="main_t">
+        <a>오늘 관람시간</a>
+        <a style="color:#999;">TODAY OPEN HOURS</a>
+    </div>-->
+
+<div class="table_m" style="border-bottom:1px solid #ccc; border-top:1px solid #ccc; background-color:white;">
+    <table style="width:100%; width:1140px; margin:0 auto; ">
+        <tr>
+            <th>서울 국립현대미술관</th>
+            <th>과천 국립현대미술관</th>
+            <th>덕수궁 국립현대미술관</th>
+            <th>청주 국립현대미술관</th>
+        </tr>
+        <tr>
+            <td><a>관람시간 ｜ 10:00 - 21:00</a></td>
+            <td><a>관람시간 ｜ 10:00 - 18:00</a></td>
+            <td><a>관람시간 ｜ 10:00 - 21:00</a></td>
+            <td><a>관람시간 ｜ 10:00 - 18:00</a></td>
+        </tr>
+    </table>
+    <!--<table style="width:25%; margin-left:10px;">
+        <tr>
+            <th>관람예약하기</th>
+            <th>도서자료 예약하기</th>
+        </tr>
+    </table>-->
+</div>
+
+
+
+<!--<div class="main_t">
+        <a>현재 전시</a>
+        <div>
+        <img width="24.5%" src="img/exhibit_1.png" />
+        <img width="24.5%" src="img/exhibit_2.png" />
+        <img width="24.5%" src="img/exhibit_3.png" />
+        <img width="24.5%" src="img/exhibit_4.png" />
+        </div>
+</div>-->
+	<div class="main_t">
+    	<a>현재 전시</a>
+        <a style="color:#868d9d;">Current Exhibition</a>
+    </div>
+    <div style="width:1140px; margin:0 auto;">
+    <figure class="snip1273 margin">
+      <img src="img/exhibit_1.png" alt="sample72"/>
+      <figcaption>
+        <h3>회천回天</h3>
+        <p>≪황재형:회천回天≫은 '광후화가'라는 정체성 안에서 황재형(1952-)이 집적해온 예술적 성취를 조명하는 개인전이다. '관부화가'는 눈앞의 대상을 사실적으로 그려 내는 황재형의 작품 세계를 함축하는 동시에 삶과 예술을 일치시키고자 했던 작가의 실천적 태도를 드러낸다는 점에서 의미가 있다.</p>
+        <p style="font-weight:bold;">-</p>
+        <p>서울 2전시실</p>
+        <p>2021.04.30 - 2021.08.22</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1273 margin">
+      <img src="img/exhibit_2.png" alt="sample21"/>
+      <figcaption>
+        <h3>≪움직임을 만드는 움직임≫</h3>
+        <p>≪움직임을 만드는 움직임≫은 20세기 초반 애니메이션 고전 작품과 제작기법을 함께 살펴보며 오늘날 중요한 영상예술로 자리잡은 애니메이션의 역사와 맥락을 조명하는 전시다. 이번전시에서는 1920~40년대 애니메이션 제작기법을 선도한 작가 5인의 대표 영화작품과 그들의 제작기법을 소개한다.</p>
+        <p style="font-weight:bold;">-</p>
+        <p>서울 7전시실 및 미디어랩</p>
+        <p>2021.04.23 - 2021.09.26</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1273 margin">
+      <img src="img/exhibit_3.png" alt="sample86"/>
+      <figcaption>
+        <h3>MMCA 소장품 하이라이트 2020+</h3>
+        <p>소장품은 미술관의 특성을 나타내는 가장 중요한 요소이다, 국립현대미술관은 1969년 설립 이래 국내 유일의 국립미술관으로서한국 미술사 정립을 위해 약 10,000점의 작품을 수집·소장해 오고 있으며 이는 미술관 활동의 기초자료가 된다.</p>
+        <p style="font-weight:bold;">-</p>
+        <p>서울 1전시실</p>
+        <p>2020.05.06 - 2021.06.27</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1273">
+      <img src="img/exhibit_4.png" alt="sample86"/>
+      <figcaption>
+        <h3>너랑 나랑___</h3>
+        <p>코로나19로 바뀐 일상을 경험하고 있는 어린이·가족들이 예술 작품을 통해 일상을 되돌아보고 나와 너, 우리의 관계와 의미를 찾는 체험전시이다. 1부 나를 찾아, 2부 함께·같이, 3부 주위를 둘러봐:함께 살아가기를 주제로 구성되어 있다.</p>
+        <p style="font-weight:bold;">-</p>
+        <p>어린이 미술관</p>
+        <p>2021.05.04 - 2022.12.11</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+<script>
+$(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
+</script>
+<div style="line-height:50px; clear:both;">&nbsp;</div>
+<div style="padding:0 0 120px; background: rgba(0,0,0,0.1); 1background-color:#f4f4f4; 1background-image:url(img/background.png);">
+	<div class="main_t">
+        <a>전시 검색</a>
+        <a style="color:#868d9d;">SEARCH FOR EXHIBITIONS</a>
+    </div>
+    <div style="width:1140px; margin:0 auto;">
+        <div class="search-wrapper" style="margin-top:20px;">
+            <div class="input-holder">
+                <input type="text" class="search-input" placeholder="전시명을 입력하세요." />
+                <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+            </div>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+        </div>
+    </div>
+</div>
+<script>
+function searchToggle(obj, evt){
+    var container = $(obj).closest('.search-wrapper');
+        if(!container.hasClass('active')){
+            container.addClass('active');
+            evt.preventDefault();
+        }
+        else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+            container.removeClass('active');
+            // clear input
+            container.find('.search-input').val('');
+        }
+}
+</script>
+
+<!--<div style="background-color:#f4f4f4; padding:1px 0 50px 0; clear:both; margin-top:50px !important; border:1px solid red;">
+    <div class="main_t">
+        <a>공지사항 / 새소식</a>
+    </div>
+    <div class="tab_cont">
+       <ul class="active">
+            <li>
+                 <em><a href="#">2021년 어린이미술관 재개관 안내</a></em>
+                 <span><a href="#">[2021-02-31]</a></span>
+            </li>
+            <li>
+                 <em><a href="#">국립현대미술관 청주 사전예약 관람 인원 조정 안내</a></em>
+                 <span><a href="#">[2021-02-31]</a></span>
+            </li>
+            <li>
+                 <em><a href="#">2021년도 미술은행 공모제 응모기간 연장 안내</a></em>
+                 <span><a href="#">[2021-02-31]</a></span>
+            </li>
+            <li>
+                 <em><a href="#">국립현대미술관 제8기 고객자문단 최종선발자 발표</a></em>
+                 <span><a href="#">[2021-02-31]</a></span>
+            </li>
+            <li>
+                 <em><a href="#">국립현대미술관 사전예약 관람인원 조정 안내</a></em>
+                 <span><a href="#">[2021-02-31]</a></span>
+            </li>
+       </ul>
+    </div>
+</div>-->
+
+<div style="clear:both;">
+    <div class="main_t">
+        <a>소장품</a>
+        <a style="color:#868d9d;">COLLECTION</a>
+    </div>
+    
+    <div class="wrap">
+        <div class="tile"> 
+            <img src="img/collection1.jpg">
+                <div class="text">
+                    <h1>LEE Doyoung</h1>
+                    <h2 class="animate-text">기명절지</h2>
+                    <p class="animate-text">이도영 - 1923</p>
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+        </div>
+        <div class="tile"> 
+            <img src="img/collection2.jpg">
+                <div class="text">
+                    <h1>LEE Sangbeom</h1>
+                    <h2 class="animate-text">초동</h2>
+                    <p class="animate-text">이상범 - 1926</p>
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+        </div>
+        
+        <div class="tile"> 
+            <img src="img/collection3.jpg">
+                <div class="text">
+                    <h1>LEE Choongwoo</h1>
+                    <h2 class="animate-text">누드-남자</h2>
+                    <p class="animate-text">이종우 - 1926</p>
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+        </div>
+    
+        <div class="tile"> 
+            <img src="img/collection4.jpg">
+                <div class="text">
+                    <h1>LEE Young-il</h1>
+                    <h2 class="animate-text">시골소녀</h2>
+                    <p class="animate-text">이영일 - 1928</p>
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+        </div>
+    </div>     
+</div>     
+     
+<script src="assets/js/jquery.min_1.12.4.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#banner').slick({
+			autoplay: true,
+			autoplaySpeed: 3000,
+			dots: true
+		});
+	});
+	
+	$(function () {
+               var tab_Btn = $(".tab_btn > ul > li");
+               var tab_Cont = $(".tab_cont > ul");
+               tab_Cont.hide().eq(0).show();
+               tab_Btn.click(function (e) {
+                    e.preventDefault();
+                    var target = $(this);
+                    var index = target.index();
+                    tab_Btn.removeClass("active");
+                    target.addClass("active");
+                    tab_Cont.hide();
+                    tab_Cont.eq(index).show();
+               });
+          });
+</script>
+
+</body>
+
+<footer style="clear:both;">
+        <div class="top">
+            <ul>
+                <li><a href="#">미술관 소개</a></li>
+                <li><a href="#">기증안내</a></li>
+                <li><a href="#">후원</a></li>
+                <li><a href="#">자원봉사</a></li>
+                <li><a href="#">채용</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">시설대관</a></li>
+                <li><a href="#">불편부조리신고</a></li>
+                <li><a href="#">MMCA프렌즈</a></li>
+                <li><a href="#">국립현대미술곤 문화재단</a></li>
+            </ul>
+        </div>
+        <div class="bot">
+            <ul>
+                <li style="margin-top:8px;"><a href="#"><img src="img/logo2.svg" alt="로고"></a></li>
+                <li>
+                    <p>대표자 윤범모 | 사업자등록번호 138-83-00313 | 대표전화 (서울) 02-3701-9500, (과천) 02-2188-6000, (덕수궁) 02-2022-0600, (청주) 043-261-1400</p>
+                    <p>Copyright (c)2018 National Museum of Modern and Contemporary Art, Korea All rights reserved.</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</html>

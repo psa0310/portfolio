@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>샘플</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://use.fontawesome.com/926fe18a63.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container2 {
+  position: relative;
+  border-radius: 5px;
+  padding: 0 0 20px ;
+  width:880px;
+  margin:0 auto;
+} 
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+   /* remove underline from anchors */
+}
+input{
+	border:1px solid #ddd;
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #38439a;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #36408e;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  1border: 1px solid #ddd;
+  height: 175px;
+  background-color:#ddd;
+  width:1px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 8px 10px;
+  color:#666;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container2 {
+  width:780px;
+  margin:0 auto;
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom:60px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+</style>
+</head>
+<body class="nohero">
+
+<header>
+	<div class="container">
+		<div class="container-small">
+			<a href="index.html" class="headA">Clova</a>
+			<button type="button" class="headC">
+				<span class="fa fa-bars" title="MENU"></span>
+			</button>
+		</div>
+		<nav class="headB">
+			<ul>
+				<li><a href="index.html">홈</a></li>
+				<li><a href="about.html">제품</a></li>
+				<li><a href="contents.html">플랫폼</a></li>
+                <li><a href="contact.html">문의</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<article class="post">
+<div class="container">
+
+	<div class="bread">
+		<ol>
+			<li><a href="index.html">TOP</a></li>
+			<li><a href="#">Login</a></li>
+		</ol>
+	</div>
+
+	<h1>로그인</h1>
+    <div class="">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
+      
+    </div>
+  </form>
+</div>
+</div>
+</article>
+
+
+
+<div class="bottom-container2">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+<div class="container">
+
+	<div class="footA">
+		<h2>Clova</h2>
+		<p>
+		Powered by NAVER·LINE<br>
+		<a href="http://logger.nett/">http://Clova.nett/</a>
+		</p>
+
+		<nav class="footD">
+			<ul>
+				<li><a href="#">
+					<span class="fa fa-twitter"
+					 title="Twitter"></span>
+				</a></li>
+
+				<li><a href="#">
+					<span class="fa fa-facebook"
+					 title="Facebook"></span>
+				</a></li>
+
+				<li><a href="#">
+					<span class="fa fa-google-plus"
+					 title="Google Plus"></span>
+				</a></li>
+
+				<li><a href="#">
+					<span class="fa fa-instagram"
+					 title="Instagram"></span>
+				</a></li>
+
+				<li><a href="#">
+					<span class="fa fa-youtube"
+					 title="YouTube"></span>
+				</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<nav class="footB">
+		<div>
+			<h3>ABOUT</h3>
+			<ul>
+				<li><a href="#">설립</a></li>
+				<li><a href="#">주소</a></li>
+				<li><a href="#">지도</a></li>
+				<li><a href="#">스태프</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<h3>SUPPORT</h3>
+			<ul>
+				<li><a href="#">다운로드</a></li>
+				<li><a href="#">매뉴얼</a></li>
+				<li><a href="#">자주 묻는 질문</a></li>
+				<li><a href="#">문의</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<h3>CONTENTS</h3>
+			<ul>
+				<li><a href="#">공지사항</a></li>
+				<li><a href="#">비즈니스</a></li>
+				<li><a href="#">프로필</a></li>
+				<li><a href="#">개발자</a></li>
+				<li><a href="#">블로그</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="footC">
+		© LOGGER corp. All rights reserved.
+	</div>
+
+</div>
+</footer>
+
+
+</body>
+</html>
+
+
