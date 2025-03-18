@@ -20,7 +20,7 @@
    .main_banner{
       width: 100%;
       height: 100vh;
-      background-image: url('img/main_banner2.gif');
+      /* background-image: url('img/main_banner2.gif'); */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -44,7 +44,7 @@
    .flex{
       display: flex;
       flex-wrap: wrap;
-      gap: 10%;
+      gap: 3%;
       justify-content: space-between;
    }
    .title{
@@ -70,6 +70,11 @@
    }
    .skill img{
       width: 70px;
+      transition: all .3s;
+   }
+   .skill img:hover{
+      transform: translateY(-7px);
+      transition: all .3s;
    }
    .project img{
       max-width:100%;
@@ -80,13 +85,18 @@
       text-decoration: none;
       color: black;
       cursor: pointer;
-      padding: 15px 30px;
+      padding: 15px 50px;
       border: 1px solid black;
       box-sizing: border-box;
       margin-bottom: 50px;
       font-size: 16px;
       background: white;
-
+      border-radius: 50px
+   }
+   .project button:hover{
+      background: black;
+      color: white;
+      transition: all .5s;
    }
    #container {
         height: 100vh;
@@ -175,11 +185,11 @@
          <div class="flex">
             <div class="project">
                <img src="img/utron.jpg">
-               <button href="https://utron.kr/" target="_blank">바로가기</button>
+               <button onclick="window.open('https://utron.kr/')">바로가기</button>
             </div>
             <div class="project">
                <img src="img/sejong.jpg">
-               <button href="https://suc.or.kr/" target="_blank">바로가기</button>
+               <button onclick="window.open('https://suc.or.kr/')">바로가기</button>
             </div>
          </div>
       </div>
