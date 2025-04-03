@@ -11,7 +11,7 @@ header .header .middle #gnb.active ul {opacity: 1;}
 header .header .middle #gnb:hover {overflow: visible;}
 header .header .middle #gnb > ul {height: 70px; line-height: 70px; display: flex;}
 header .header .middle #gnb > ul > li {position: relative;}
-header .header .middle #gnb > ul > li > a {position: relative; transition: all 0.5s; display: inline-block; font-size: 17px; color:#333; width:130px; transition:all 0.5s;}
+header .header .middle #gnb > ul > li > a {position: relative; display: inline-block; font-size: 17px; color:#333; width:130px; transition:all 0.5s;}
 header .header .middle #gnb > ul > li > a::after {content: ''; position: absolute; left: 50%; bottom: -1.5px; width: 0; height: 2px; background: #5f217a; transition: all 0.5s; z-index:9999 !important;}
 header .header .middle #gnb > ul > li:hover > a::after {left: 0; width: 100%;}
 header .header .middle #gnb > ul > li:hover > a {color: #5f217a; font-weight: bold; transition: all 0.5s;}
