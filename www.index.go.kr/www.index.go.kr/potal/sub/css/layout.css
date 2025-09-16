@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/************************************************************************
+ * 파일명      : layout.css
+ * 설명        : 공통
+ * 작성자      : 박수림
+ * 작성일      : 2020.11.03
+************************************************************************/
+
+/* YP 240910 header css 삭제 */
+
+/* 메인 컨텐츠 */
+#container { width:100%; height:100%; }	
+.cont_layout {position:relative; max-width:1400px; margin:0 auto;}
+.sub_contents {position: relative;}
+.snb.top0{top:0;}
+
+/* YP 240910 footer css 삭제 */
+
+.title_area {overflow:hidden; padding:6px 10px 10px 10px;}
+.title_area .r_p{float:right; margin-top:10px; color:#5a5a5a;}
+.title_area .r_p .gap {font-family:'dotum'; padding:0 5px;}
+.title_area .r_p .ico_home {display:inline-block; padding-left:19px; background:url('../img/etc/ico_bg.png') no-repeat -6px -547px;}
+.m_f_site_wrap { display: none; }
+
+/*icon*/
+.ico_ex {background:url('../img/etc/ico_bg.png') no-repeat -8px -620px; padding-left:20px;}
+.ico_srt {background:url('../img/etc/ico_bg.png') no-repeat -8px -584px; padding-left:20px;}
+.ico_rule {display:block; line-height:22px; padding:2px 0 2px 35px;  background:url('../img/etc/ico_bg.png') no-repeat -5px -305px;}
+.ico_menual {display:block; line-height:16px; padding:2px 0 2px 44px; background:url('../img/etc/ico_bg.png') no-repeat -4px -240px;}
+.l_tit {/*float:left;*/ background:url('../img/etc/ico_bg.png') no-repeat -12px -4px; padding-left:25px; font-size:16px; width: 100%;}
+.twinCircle {float:left; background:url('../img/etc/bu_twinCircle.gif') no-repeat; padding-left:25px; font-size:16px;}
+.inner_box {position:relative; /*border:1px solid #d9dfeb; border-top-right-radius:10px; border-top-left-radius:10px; padding:15px 25px 25px 25px; background:#fff; overflow: hidden;*/}/*241007 YP edit*/
+.inner_box .pageTitle {font-family:'NotoB'; display:flex; align-items:center; /*justify-content: space-between;*/ font-size:22px; margin: 5px 0 15px;}
+.inner_box .pageTitle span {display: flex; border: 1px solid #e1e1e1; padding: 3px 10px; border-radius: 4px; cursor: pointer; margin-left: 10px; font-size: 15px; font-family: 'NotoR'; }
+.inner_box .pageTitle span i {font-size: 18px; color: #f7d104; margin-right: 5px; margin-top: 1px; }
+.inner_box .right_tit {width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; align-items: flex-end;}
+/*.inner_box .tit {padding-left:10px; background:url('../img/etc/ico_bg.png') no-repeat -8px -654px; color: #333; margin-right: 2px;}*//* 241011 YP */
+.inner_box .right_tit a.toggle:before {display: flex; content: '모두 접기'; padding: 4px 13px; /* 220810 */ border-radius: 4px; color: #fff; font-family: 'NotoM'; font-size: 13px; background: #697ec4; white-space: nowrap;}
+.inner_box .right_tit a.toggle.on:before {content: '전체 보기';}
+.inner_box .sub_box {width:100%; float: left; margin-bottom: 40px;}
+.inner_box .sub_box .sub_title {position: relative; background-color: #f0f5fb;margin-top: 10px; border: 1px solid #e6e6e6;font-family: 'NotoB';color: #333; font-size: 17px; width:100%; float: left; padding: 5px 0;}
+.inner_box .sub_box .sub_title img {margin-left: 10px;}
+
+
+.bold {font-weight: bold;}
+.right {float: right; }
+.left {float: left; }
+.bb{border-bottom:1px solid #cccccc !important;}
+
+/* sub_title select style CSS - 220622 SY */
+
+/* 220622 SY Edit */
+.inner_box .sub_box .sub_title .ac_btn {position: absolute; transform: translateY(-50%); right: 15px; top: 50%;} 
+.inner_box .sub_box .sub_title .ac_btn a.button {display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; position: relative; cursor: pointer; border: 1px solid #3f75e7; background: #fff;}
+.inner_box .sub_box .sub_title .ac_btn a.button span {display: block; position: absolute; width: 14px; height: 2px; background: #3f75e7; transition: all .35s;}
+.inner_box .sub_box .sub_title .ac_btn a.button.off span:last-of-type {transform: rotate(-90deg);}
+.inner_box .sub_box .sub_title .ac_btn a.button.on span:last-of-type  {transform: rotate(0);}
+.filter_btn { display: none; position: absolute; right: 15px; top: 7px;}
+.filter_btn a { display: block; width: 24px; height: 24px; position: relative; border: 1px solid #3f75e7; background: url(../img/etc/filter_icon.png) no-repeat center, #fff;}
+.filter_btn a.on {background: url(../img/etc/up_blue_icon.png) no-repeat center, #fff;}
+
+/* 220218 추가 - 박승연 */
+.inner_box .sub_box .sub_title .ac_btn {position: absolute; transform: translateY(-50%); right: 15px; top: 50%;} 
+.inner_box .sub_box .sub_title .ac_btn a.button {display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; position: relative; cursor: pointer; border: 1px solid #3f75e7; background: #fff;}
+.inner_box .sub_box .sub_title .ac_btn a.button span {display: block; position: absolute; width: 14px; height: 2px; background: #3f75e7; transition: all .35s;}
+.inner_box .sub_box .sub_title .ac_btn a.button.off span:last-of-type {transform: rotate(-90deg);}
+.inner_box .sub_box .sub_title .ac_btn a.button.on span:last-of-type  {transform: rotate(0);}
+
+.inner_box .sub_box .sub_conts {width: 100%; float: left; position: relative; margin-top: 10px;}
+.inner_box .sub_box .sub_title .ml10{margin-left: 10px;}
+.inner_box .sub_box .sub_conts .graph_btn_area {width: 100%; margin-top: 10px; height: 40px;}
+.gray_box {position:relative; background:#f7f7f7; border:1px solid #e5e5e5; border-radius:3px; padding:10px 25px;}
+.gray_box .tit {padding-left:10px; background:url('../img/etc/ico_bg.png') no-repeat -8px -654px;}
+.gray_box .txt {padding:0 10px;}
+.gray_box .r_btn {position:absolute; top:10px; right:20px;}
+
+.link{color: #0066ff; cursor: pointer;}
+.link:hover{color: #0000ff;}
+
+/* chart */
+.chart{width: 100%; height: 400px; margin-top: 5px; border: 1px solid #e6e6e6; overflow-x: auto; overflow-y:hidden; padding: 15px; box-sizing: border-box;}
+.EnaraChart {width: 98%; height: 280px; margin-top: 5px; border: 1px solid #e6e6e6; overflow-x: auto; overflow-y:hidden; padding: 15px; box-sizing: border-box;}
+.KChart {width: 95%; height: 230px; margin-top: 20px; border: 1px solid #e6e6e6; overflow-x: auto; overflow-y:hidden; padding: 15px; box-sizing: border-box;}
+div.KChart_area{font-size: 8px; margin-top: -10px;}
+.axisLabel{font-size: 8px;}
+
+
+/* stts */
+.sttsTitle{width: 100%; font-size: 16px; text-align: center; font-family:'NotoB'; margin-bottom: 15px;}
+
+/* button */
+.btn_base {display:inline-block; border-radius:4px; color:#fff; padding:0 10px; text-align:left;background: #333;font-family:'NotoR'; font-size:13px; margin-left:5px; line-height: 30px;}
+.btn_base:hover {color:#fff; background: #24377b;}
+.btn_base a:active {color:#333; background: #24377b;}
+.btn_gr {display:inline-block;background:#f9f9f9;border-radius:4px;color:#333;border: 1px solid #ccc;padding:0 13px;text-align:center;line-height:30px;font-size:13px;font-family:'NotoM';font-weight: bold;}
+.btn_bl {background: #314fa5;  }
+.btn_gr:hover, 
+.btn_gr a:active {background:#666; color:#fff; border: 1px solid #666;}
+.btn_gr i.xi-renew {font-size:15px; line-height: 28px;}
+.btn_blk {display:inline-block; background:#444; border-radius:4px; color:#fff; padding:0 10px; text-align:center; line-height:30px; font-size:13px; font-family:'NotoR'; margin-left:5px;}
+.btn_blk:hover {background:#333; color:#fff;}
+.btn_blk a:active {background:#333; color:#fff;}
+.ti_btn a {margin-left: 3px;}
+.graph_btn_area .left a {margin-right: 3px;}
+.graph_btn_area .left a.btn_gr{ height: 30px; box-sizing: border-box; float: left; display: flex; align-items: center; }
+.graph_btn_area .left a.btn_gr i:before { display: flex; align-content: center; height: 100%; align-items: center; }
+.graph_btn_area .right a.pattern {background: #314fa5;}
+.graph_btn_area .right a.pattern:hover,
+.graph_btn_area .right a.pattern:active {background: #244299;}
+.graph_btn_area .right a.legend {background: #00a9a0;}
+.graph_btn_area .right a.legend:hover,
+.graph_btn_area .right a.legend:active {background: #02938b;}
+.graph_btn_area .right a.download {background: #34405a;}
+.graph_btn_area .right a.download:hover,
+.graph_btn_area .right a.download:active {background: #3d4e73;}
+
+/* width */
+.w_40 {width:40px;}
+.w_60 {width:60px;}
+.w_80 {width:80px;}
+.w_100p{width: 100%;}
+
+/* 별점 */
+.starDiv .star{
+	background: url('../img/etc/icon_star_off.png') no-repeat right 0;
+	background-size: auto 100%;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	text-indent: -999px;
+	cursor: pointer;
+}
+
+.starDiv .on{background: url('../img/etc/icon_star_on.png') no-repeat right 0;
+	background-size: auto 100%;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	text-indent: -999px;
+	cursor: pointer;
+}
+
+/* EvalPop */
+.eval_inner_box{position: relative; overflow: hidden;}
+.eval_inner_box .sub_box{width: 100%;}
+.eval_inner_box .sub_box .sub_title{background-color: #435eb5; border-top: 1px solid black;border-bottom: 1px solid black;font-family: 'NotoB';color: white;font-size: 15px;width:100%;float: left;}
+.eval_inner_box .sub_box .sub_title .ml10{margin-left: 10px;}
+.tableBase{width:100%; font-size:14px; border-spacing:15px; background:#fff; border-radius:15px;}
+.tableBase td{padding-top: 15px;}
+
+/* Scroll to top */
+.top_btn {
+	display:none;overflow:hidden;position:fixed;z-index:50;width:50px;height:48px;font-size:24px;line-height:48px;text-align:center;filter:alpha(opacity=80);
+	right:20px; bottom: 50%; transform: translateY(-50%); background-color: #fff; color: #656565; border: 1px solid #e0e0e0; border-radius: 13px; -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1); box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+}/* 240910 YP edit */
+.top_btn i { color: #909090; }
+.top_btn span { font-size: 15px; display: block; color: #626262; font-family: "NotoB", sans-serif; }
+.top_btn:hover i{ color:#333;}/* 240910 YP edit */
+
+/* 20220207 이지영 추가*/
+.inner_box .sub_box .sub_conts h4 {font-size: 18px; color: #3f75e7; margin-bottom: 20px; margin-top: 20px;}
+.inner_box .sub_box .sub_conts h4:before{display: inline-block; content: ''; margin-right: 5px; width: 10px; height: 10px; border-radius: 50%; border: 3px solid #3f75e7;}
+
+/* 2023년 개선사업 운영DB 전송 추가 .inner_box .pageTitle span*/
+
+.inner_box .pageTitle a.indexTmpr {display: flex; justify-content: center; align-items: center; width: 130px; height: 32px; border: 1px solid #ccc; border-radius: 10px;  background:#0e54e9; margin-left: 20px;}
+.inner_box .pageTitle a.indexTmpr span {font-size: 20px; color:#fff; display:contents;}
+.inner_box .pageTitle a.indexTmpr:hover {background:#ffffff; border: 1px solid #0e54e9;}
+.inner_box .pageTitle a.indexTmpr:hover span{color:#0e54e9;}
+
+/* focus basic */
+a:focus-visible,
+input:focus-visible,
+button:focus-visible,
+textarea:focus-visible,
+input[type="file"]:focus-visible + label,
+input[type="checkbox"]:focus-visible + label,
+input[type="radio"]:focus-visible + label {
+    outline: 2px dashed #333 !important;
+    outline-offset: 2px;
+}
+
+/* focus > outline color: #fff; */
+header .lnb ul li a:focus-visible,
+header .lnb ul li.zoom .btn:focus-visible{ outline-color: #fff !important; }
+.foot_menu .f_site ul li a:focus-visible{ outline-color: #fff !important; }
+
+/* focus > outline offset: -2px; */
+#header .gnb .gnb_wrap .gnb_title:focus-visible{ outline-offset: -2px; }
+.indicator_wrap.type3 .subCate_swiper .btn_subCate:focus-visible{ outline-offset: -2px; }
+.indicators_box .depth1 .ltem .btn:focus-visible,
+.indicators_box .depth2 .list_con button.ico_explan:focus-visible{ outline-offset: -2px; }
+.indicator_nav a:focus, .indicator_nav .btn:focus-visible{ outline-offset: -2px; }
+
+/* focus > outline: unset; */
+.indicator_wrap .depth1 .ltem .btn:focus-visible{ outline: unset !important; }
